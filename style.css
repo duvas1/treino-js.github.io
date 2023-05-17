@@ -1,0 +1,117 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #24273a;
+}
+
+h1, h2 {
+    color: white;
+}
+
+#escolheu {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#resultado {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+}
+
+#escolhas {
+    width: 400px;
+    background-color: #5b6078;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -75%);
+}
+
+@media(max-width: 768px) {
+    #escolhas {
+    width: 90%;
+    height: auto;
+    font-size: 16px;
+    
+    }
+    h1 {
+        font-size: 20px;
+        width: 280px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    }
+
+@media(max-width: 820px) {
+    #escolhas {
+        width: 90%;
+        height: auto;
+        font-size: 3rem;
+    }
+    button#pedra, button#papel, button#tesoura {
+        font-size: 200px;
+    }
+}
+
+button#pedra, button#papel, button#tesoura {
+    font-size: 1.25rem;
+    border-radius: 10px;
+    border-style: none;
+    padding: 5px;
+    background-color: #363a4f;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+button#tentar-novamente {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    padding: 10px;
+    width: 420px;
+    height: 60px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ed8796;
+    color: #181926;
+}
+
+button#pedra:hover{
+    transition: 0.5s;
+    background-color: #a6da95;
+    color: #181926;
+    border: 0;
+}
+
+button#papel:hover{
+    transition: 0.5s;
+    background-color: #8aadf4;
+    color: #181926;
+    border: 0;
+}
+
+button#tesoura:hover{
+    transition: 0.5s;
+    background-color: #ed8796;
+    color: #181926;
+    border: 0;
+}
+
+.botao-inativo {
+    pointer-events: none;
+    opacity: 0.3;
+    background-color: #1e2030;
+}
